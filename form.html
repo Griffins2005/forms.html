@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Registration Form</title>
+</head>
+<body>
+
+<style>
+    body {
+        text-align: center;
+        background-image: url(https://img.lovepik.com/free-png/20211124/lovepik-natural-woods-png-image_401110806_wh1200.png);
+    }
+    h2 {
+        text-decoration: underline;
+    }
+    form {
+        border-radius: 15px;
+        border-color: black;
+        margin-left: 540px;
+        padding-left: 13px;
+        padding-bottom: 13px;
+        padding-top: 13px;
+        text-align: left;
+        background-color: lightslategray;
+        width: 300px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-style: italic;
+    }
+    #button{
+        background-color: blue;
+        border-radius: 6px;
+        border-color: black;
+    }
+    #name, #address, #dob , #telephone, #email , #course, #gender {
+        background-color: bisque;
+        border-radius: 6px;
+        border-color: black;
+    }
+</style>
+<h2>Student Registration Form</h2>
+
+<form action="#" method="post">
+
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+    <label for="dob">Date of Birth:</label><br>
+    <input type="date" id="dob" name="dob" required><br><br>
+
+    <label for="gender">Gender:</label><br>
+    <select id="gender" name="gender" required>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="male">Transgender</option>
+        <option value="male">Prefer not to say</option>
+        <option value="other">Other</option>
+    </select><br><br>
+    
+    <label for="address">Address:</label><br>
+    <textarea id="address" name="address" placeholder="Enter your address"required></textarea><br><br>
+    
+    <label for="telephone">Telephone:</label><br>
+    <input type="tel" id="telephone" name="telephone" pattern="[0-9]{10}" placeholder="Enter your telephone no" required><br><br>
+    
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+    
+    <label for="course">Course:</label><br>
+    <input type="text" id="course" name="course" placeholder="Enter your course" required><br><br>
+    
+    <input id="button"  type="submit" value="Register">
+    <input id="button" type="button" value="Cancel" onclick="window.location.href='index.html'">
+    
+</form>
+
+</body>
+</html>
